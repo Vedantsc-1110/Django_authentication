@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Home | Django Auth{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card card-rounded shadow-sm border-0">
+            <div class="card-body p-4">
+                <h3 class="card-title mb-3 text-center">Welcome 👋</h3>
+
+                {% if user.is_authenticated %}
+                    <p class="text-muted text-center">
+                        You are logged in as
+                        <strong>{{ user.email|default:user.username }}</strong>.
+                    </p>
+                    <p class="text-center mb-0">
+                        Use the navigation bar to logout whenever you’re done.
+                    </p>
+                {% else %}
+                    <p class="text-muted text-center">
+                        You're not logged in yet.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'account_login' %}" class="btn btn-primary">
+                            Go to Login
+                        </a>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

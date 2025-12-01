@@ -1,0 +1,101 @@
+# ============================
+# Python
+# ============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============================
+# Virtual Environment
+# ============================
+venv/
+env/
+ENV/
+.venv/
+.env.bak
+pip-wheel-metadata/
+
+# ============================
+# Django
+# ============================
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+db.sqlite3-journal
+media/
+staticfiles/
+static_root/
+.DS_Store
+
+# Local Django settings
+local_settings.py
+
+# ============================
+# Env / Secrets
+# ============================
+.env
+.env.*
+.supabase/*
+supabase/.temp
+
+# ============================
+# IDE / Editor
+# ============================
+
+# VS Code
+.vscode/
+.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# ============================
+# OS / Misc
+# ============================
+Thumbs.db
+.DS_Store
+*.swp
+*.swo
+
+# ============================
+# Node / Frontend (optional)
+# ============================
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# ============================
+# Supabase CLI temp files
+# ============================
+.supabase/
+
+# ============================
+# Compiled / Cache
+# ============================
+*.sqlite3
+__pycache__/
+*.pyc
+*.pyo
+*.bak
+*.tmp
