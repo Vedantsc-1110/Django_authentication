@@ -134,3 +134,10 @@ SOCIALACCOUNT_AUTO_SIGNUP = True
 
 # Use our custom adapter to set username=email
 SOCIALACCOUNT_ADAPTER = "accounts.adapters.CustomSocialAccountAdapter"
+
+# config/settings.py
+
+# ... existing allauth settings ...
+
+# Use our custom adapters
+ACCOUNT_ADAPTER = "accounts.adapters.CustomAccountAdapter"

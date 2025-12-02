@@ -258,4 +258,11 @@
         document.getElementById("googleLoginForm").submit();
     }
 </script>
+
+{% if request.GET.invalid_domain %}
+<script>
+    alert("Only @vit.edu email addresses are allowed. Please use your institutional email.");
+</script>
+{% endif %}
+
 {% endblock %}
